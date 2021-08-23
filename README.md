@@ -41,7 +41,7 @@
 ### Client Script
   1. From the script directory run api_calls.py to send bulk requests to the API
   2. Add strings to strings_to_piglatinize.txt to make additional requests 
-  3. Be sure to set the port correctly do distinguish between the Docker container or local development
+  3. Be sure to set the port correctly in api_calls.py to distinguish between the Docker container or local development
 
 ### Testing
   1. Run pytest from the root of the project
