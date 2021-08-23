@@ -1,9 +1,5 @@
 import re
 
-
-def sentence_to_array(sentence):
-    return re.findall(r"[\w']+|[.,!?; ]", sentence)
-
 def piglatinize(word):
     callback = lambda pattern: \
         pattern.group(2) + pattern.group(1) + 'ay' \

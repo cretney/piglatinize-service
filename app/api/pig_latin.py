@@ -1,13 +1,13 @@
 from fastapi import APIRouter
+import re
 
-from app.api.util import *
-
+from .util import piglatinize
 
 pig_latin = APIRouter()
 
 @pig_latin.get('/')
 async def index(text: str):
-    sentence_array = sentence_to_array(text)
+    sentence_array = re.findall(r"[\w']+|[.,!?; ]", text)
     pig_latin_array = []
 
     for item in sentence_array:

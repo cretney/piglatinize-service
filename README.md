@@ -39,5 +39,9 @@
   4. Run docker-compose down to terminate the container
 
 ### Client Script
-    1.  From the script directory run test_api.py to send bulk requests to the API
-    2.  Be sure to set the port correctly do distinguish between the Docker container or local development
+  1. From the script directory run api_calls.py to send bulk requests to the API
+  2. Add strings to strings_to_piglatinize.txt to make additional requests 
+  3. Be sure to set the port correctly do distinguish between the Docker container or local development
+
+### Testing
+  1. Run pytest from the root of the project
